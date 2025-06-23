@@ -1,0 +1,71 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category><pattern> HELLO </pattern><template>Hello! How are you?</template></category>
+<category><pattern> HELLO * </pattern><template><srai>HELLO</srai></template></category>
+<category><pattern> HI </pattern><template><srai>HELLO</srai></template></category>
+<category><pattern> HOW ARE YOU </pattern><template>I'm here to help you with health information. How can I assist?</template></category>
+<category><pattern> BYE </pattern><template>#0$Goodbye! Take care.</template></category>
+
+<!-- General Health Condition Inquiry -->
+<category><pattern>I HAVE *</pattern>
+  <template>#1$<star/></template>
+</category>
+
+<category><pattern>WHAT ARE THE SYMPTOMS OF *</pattern>
+  <template>#2$<star/></template>
+</category>
+
+<category><pattern>WHAT CAUSES *</pattern>
+  <template>#3$<star/></template>
+</category>
+
+<category><pattern>HOW TO TREAT *</pattern>
+  <template>#4$<star/></template>
+</category>
+<!-- Redirect to Wikipedia Lookup -->
+<category><pattern> LOOKUP * </pattern>
+  <template>#1$<star/></template>
+</category>
+
+<!-- Wikipedia Queries -->
+<category><pattern> WHAT IS * </pattern><template>#1$<star/></template></category>
+<category><pattern> DEFINE * </pattern><template><srai>WHAT IS <star/></srai></template></category>
+<category><pattern> WHO IS * </pattern><template><srai>WHAT IS <star/></srai></template></category>
+
+<!-- Knowledge Base Patterns -->
+<category>
+  <pattern>I KNOW THAT *</pattern>
+  <template>#101$<star/></template>
+</category>
+
+<category>
+  <pattern>CHECK THAT *</pattern>
+  <template>#102$<star/></template>
+</category>
+
+<!-- Voice Input Patterns -->
+<category>
+    <pattern>USE VOICE INPUT</pattern>
+    <template>#200$</template>
+</category>
+
+<!-- Fuzzy Fever Pattern -->
+<category>
+  <pattern>I HAVE FEVER *</pattern>
+  <template>#300$<star/></template>
+</category>
+
+<!-- IMAGE RECOGONITION -->
+<category>
+    <pattern>CLASSIFY BRAIN IMAGE</pattern>
+    <template>#301$</template>
+</category>
+
+<!-- Fallback -->
+<category>
+  <pattern>*</pattern>
+  <template>#100$<star/></template>
+</category>
+
+</aiml>

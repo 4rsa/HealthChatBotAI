@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HealthBot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header>
+      <h1>🩺 HealthBot</h1>
+      <p class="subtitle">Ask me about symptoms, causes or treatments</p>
+    </header>
+
+    <section id="chat-log" class="chat-log"></section>
+    
+    <button id="clear-chat" type="button" class="clear-btn">🗑️ Clear Chat</button>
+
+    <form id="chat-form" autocomplete="off">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your health question here…"
+      />
+      <label class="file-upload-btn">
+        ➕
+        <input type="file" id="tumor-image" accept="image/*" hidden />
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
