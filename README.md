@@ -7,9 +7,9 @@ An intelligent multilingual healthcare chatbot designed to answer user queries a
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="internal/images/screenshot3.png" width="300" alt="Chatbot in action"/>
-  <img src="internal/images/screenshot2.png" width="300" alt="Tumor detection"/>
-  <img src="internal/images/screenshot1.png" width="300" alt="Voice input feature"/>
+  <img src="internal/storage/screenshot3.png" width="300" alt="Chatbot in action"/>
+  <img src="internal/storage/screenshot2.png" width="300" alt="Tumor detection"/>
+  <img src="internal/storage/screenshot1.png" width="300" alt="Voice input feature"/>
 </p>
 
 ---
